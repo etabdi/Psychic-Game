@@ -3,14 +3,12 @@ var alphabet = [" a "," b "," c "," d "," e "," f "," g ",
                 " o "," p "," q "," r "," s "," t "," u ",
                 " v "," w "," x "," y "," z "];
     
-
-
-        var wins = 0;
-        var losses = 0;
-        var guesses = 15;
-        var userGuess=[];
-
-            // user press key will generate alphabets
+                var wins = 0;
+                var losses = 0;
+                var guesses = 10;
+                var userGuess=[];
+        
+                   
         document.onkeyup = function(event) {
             var yourGuess = event.key; 
               //Capture letters entered by the user  
@@ -38,7 +36,7 @@ var alphabet = [" a "," b "," c "," d "," e "," f "," g ",
         if(guesses == 0){
             losses++;
            guesses=13;
-              alert(losses);
+              alert("---------Game Over-----");
               reset(userGuess);
                userGuess=[];
 
@@ -48,7 +46,7 @@ var alphabet = [" a "," b "," c "," d "," e "," f "," g ",
         function reset() {
             
              
-             guesses = 8;
+             guesses = 10;
            
         }
   

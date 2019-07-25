@@ -1,7 +1,7 @@
-var alphabet = [" a "," b "," c "," d "," e "," f "," g ",
-                " h "," i "," j "," k "," l "," m "," n ",
-                " o "," p "," q "," r "," s "," t "," u ",
-                " v "," w "," x "," y "," z "];
+var alphabet = ["a","b","c","d","e","f","g",
+                "h","i","j","k","l", "m","n",
+                "o","p","q","r","s","t","u",
+                "v","w","x","y","z"];
     
                 var wins = 0;
                 var losses = 0;
@@ -19,11 +19,12 @@ var alphabet = [" a "," b "," c "," d "," e "," f "," g ",
                  //console logging 
                 console.log(computerChoice)
                 console.log(yourGuess)
-                console.log(guesses)
+              
 
             //chech computer choise and user guss same
         if(yourGuess===computerChoice){
          wins++;
+         console.log(wins);
             
         }
 
@@ -35,13 +36,13 @@ var alphabet = [" a "," b "," c "," d "," e "," f "," g ",
     
         if(guesses == 0){
             losses++;
-           guesses=13;
+           guesses=10;
               alert("---------Game Over-----");
               reset(userGuess);
                userGuess=[];
 
             
-              console.log(guesses);
+             
         }
         function reset() {
             
@@ -50,9 +51,9 @@ var alphabet = [" a "," b "," c "," d "," e "," f "," g ",
            
         }
   
-    console.log(losses);
-    document.getElementById('wins').innerHTML = "Wins: " + wins;
-    document.getElementById('losses').innerHTML = "losses: " + losses;
+    
+    document.getElementById('wins').innerHTML = "Wins:" + wins;
+    document.getElementById('losses').innerHTML = "losses:" + losses;
     document.getElementById('guessesLeft').innerHTML = "Guesses Left:"+ ""+ guesses;
     
     }

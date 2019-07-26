@@ -25,7 +25,7 @@
                        //chech computer choise and user guess same
            if(  aplhaInput===computerChoice){
                           wins++;
-                          alert("---------You win-----");
+                          alert("---------You Won-----");
                         reset(userGuess);
                        console.log(wins);}
                                             

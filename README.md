@@ -1,7 +1,7 @@
 # Psychic-Game
 
 
-Rndomly picks a letter, and the user has to guess which letter the app chose. 
+Rndomly picks a letter and the user has to guess which letter the app chose. 
 Guess what letter I'm thinking of----
 
 Wins: (# of times the user has guessed the letter correctly)

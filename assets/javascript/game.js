@@ -25,7 +25,9 @@
                        //chech computer choise and user guess same
            if(  aplhaInput===computerChoice){
                           wins++;
-                          console.log(wins);}
+                          alert("---------You win-----");
+                        reset(userGuess);
+                       console.log(wins);}
                                             
                                  
              else{ guesses--; }
@@ -35,11 +37,13 @@
                         guesses=10;
                       alert("---------Game Over-----");
                         reset(userGuess);
-                        userGuess=[];}                               
-                function reset() {                                       
+             }           
+                function reset() {     
+                         
+                            userGuess=[];                    
                              guesses = 10;}
                       document.getElementById('wins').innerHTML = "Wins:" + wins;
                      document.getElementById('losses').innerHTML = "losses:" + losses;
                      document.getElementById('guessesLeft').innerHTML = "Guesses Left:"+ ""+ guesses;}
                 
-        
+    

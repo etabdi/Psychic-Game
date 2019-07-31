@@ -16,3 +16,5 @@ Your Guesses So Far: (the specific letters that the user typed. Display these un
 When the player wins, increase the Wins counter and start the game over again .
 When the player loses, increase the Losses counter and restart the game without a page refresh 
 
+ my portfolio link https://etabdi.github.io/Bootstrap-Portfolio/
+
